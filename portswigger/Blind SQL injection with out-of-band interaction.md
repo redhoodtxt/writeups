@@ -4,7 +4,7 @@ To solve the lab, exploit the SQL injection vulnerability to cause a DNS lookup 
 
 Opened the login page and sent the request from HTTP History to Burp Intruder. 
 Added the payload parameters to the injection point:
-![Screenshot 2024-05-03 at 10.01.47 AM 1](images/Screenshot%202024-05-03%20at%2010.01.47%20AM%201.png)
+![Screenshot 2024-05-03 at 10.01.47 AM 1](../../courses/bscp/images/Screenshot%202024-05-03%20at%2010.01.47%20AM%201.png)
 Right clicked to 'scan defined insertion points' as seen below: 
 ![Screenshot 2024-05-03 at 10.08.20 AM](images/Screenshot%202024-05-03%20at%2010.08.20%20AM.png)
 After the scan was finished, I received the following under Target, where a SQL injection vulnerability was detected and the following request with the respective payload was made:
