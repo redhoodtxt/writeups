@@ -128,8 +128,8 @@ This was found in its body. Let me change the price to that of the cheaper item:
 `productId=1&redir=PRODUCT&quantity=1&price=680`
 
 Let's try and forward this modified request:
-![[Pasted image 20240509135839.png]]
+![Pasted image 20240509135839](images/Pasted%20image%2020240509135839.png)
 As you can see, the price of the jacket has been successfully changed. Let's complete the purchase.
-![[Pasted image 20240509135907.png]]
+![Pasted image 20240509135907](images/Pasted%20image%2020240509135907.png)
 Nice!
 Really learnt how there is logic flaws when it comes to validating inputs, and important vector I will take note of in the future!

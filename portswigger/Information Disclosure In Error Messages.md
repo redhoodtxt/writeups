@@ -1,7 +1,7 @@
 *This lab's verbose error messages reveal that it is using a vulnerable version of a third-party framework. To solve the lab, obtain and submit the version number of this framework.*
 
 Did a audit scan of the webpage to reveal the following:
-![[Screenshot 2024-05-08 at 9.19.32 AM.png]]
+![Screenshot 2024-05-08 at 9.19.32 AM](images/Screenshot%202024-05-08%20at%209.19.32%20AM.png)
 
 The framework used is `Apache Struts 2 2.3.31`. 
 

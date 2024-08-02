@@ -29,4 +29,4 @@ I converted the `.jpg` file to `.php` file so that the script is executed:
 ```
 
 I then uploaded the file to the page, checking the `GET` request to retrieve the image, finding the following:
-![[Screenshot 2024-05-13 at 3.48.43 PM.png]]
+![Screenshot 2024-05-13 at 3.48.43 PM](images/Screenshot%202024-05-13%20at%203.48.43%20PM.png)

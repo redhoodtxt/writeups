@@ -93,7 +93,7 @@ Note that you will have to specify the protocol to be `https` in the browser, no
 https://10.10.197.64:1443/
 ```
 Scrolling through the webpage, you come across the Fully Qualified Domain Name of the IP. 
-![[hostname.png]]
+![hostname](images/hostname.png)
 ##### *Answer : dev.probe.thm*
 
 #### *What is the value of the PHP Extension Build on the server?*

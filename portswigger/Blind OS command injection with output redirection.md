@@ -13,6 +13,6 @@ I had to make sure that the payload was  URL encoded as well, so that the payloa
 
 After trying the payload at each point, I was not able to get any results. I modified the payload to the following: 
 `|| whoami > /var/www/images/whoami.txt ||` adding `||` incase that there were additional commands run after a client input. I then encoded the payload and tried at each input: 
-![[Screenshot 2024-05-09 at 11.16.49 AM.png]]
+![Screenshot 2024-05-09 at 11.16.49 AM](images/Screenshot%202024-05-09%20at%2011.16.49%20AM.png)
 
 The payload point was successful for the `email=` input, solving the lab when i accessed the `/image?filename=whoami.txt`.

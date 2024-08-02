@@ -268,7 +268,7 @@ steghide: could not extract any data with that passphrase!
 
 ```
 Looking at the password, again, it dawned onto me that the password may not be in plaintext. I used the `magic` tool in CyberChef to see if i could decode the password:
-![[agent_sudo_steg_pw.png]]
+![agent_sudo_steg_pw](images/agent_sudo_steg_pw.png)
 Nice!
 ##### *Answer : Area51*
 

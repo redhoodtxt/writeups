@@ -2,13 +2,12 @@
 You can log in to your own account using the following credentials: wiener:peter*
 - monitor login process
 - look for bypass flaw - not brute-force 
-
 Checked `/admin` to see the following: 
-![[Screenshot 2024-05-10 at 2.21.40 PM.png]]
+![Screenshot 2024-05-10 at 2.21.40 PM](images/Screenshot%202024-05-10%20at%202.21.40%20PM.png)
 After viewing the login process through *Proxy*, I came across a request to select roles:
-![[Screenshot 2024-05-10 at 2.49.01 PM.png]]
+![Screenshot 2024-05-10 at 2.49.01 PM](images/Screenshot%202024-05-10%20at%202.49.01%20PM.png)
 I decided to repeat the process so that I can capture the requests with *Intercept* and drop the `GET /role-selector` request and bypass authentication:
-![[Screenshot 2024-05-10 at 2.50.23 PM.png]]
+![Screenshot 2024-05-10 at 2.50.23 PM](images/Screenshot%202024-05-10%20at%202.50.23%20PM.png)
 I then access `/` on the web browser after forwarding the remaining requests in *Intercept* to see a *Admin panel* at the `/` page:
-![[Screenshot 2024-05-10 at 2.53.19 PM.png]]
+![Screenshot 2024-05-10 at 2.53.19 PM](images/Screenshot%202024-05-10%20at%202.53.19%20PM.png)
 Deleted *carlos* at the admin page!

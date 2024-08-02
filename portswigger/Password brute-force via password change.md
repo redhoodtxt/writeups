@@ -4,18 +4,18 @@ Victim's username: carlos
 Candidate passwords*
 
 Logged into the website with the given credentials and was greeted with the following:
-![[Screenshot 2024-05-07 at 3.39.50 PM.png]]
+![Screenshot 2024-05-07 at 3.39.50 PM](images/Screenshot%202024-05-07%20at%203.39.50%20PM.png)
 brute-forcing for *carlos*'s current password to change his passwords did not work as it just redirected me to the login page, so I decided to test the error responses when trying to change passwords. 
 
 When supplementing the correct current password and mismatching the new passwords, I came across the following message:
-![[Screenshot 2024-05-07 at 3.45.38 PM 2.png]]
+![Screenshot 2024-05-07 at 3.45.38 PM 2](images/Screenshot%202024-05-07%20at%203.45.38%20PM%202.png)
 
 Hence, I sent this request to the *Intruder*, set the payload as the current password. I mismatched the passwords and inserted the default wordlist as the payload:
-![[Screenshot 2024-05-07 at 3.53.55 PM.png]]
-![[Screenshot 2024-05-07 at 3.50.19 PM.png]]
+![Screenshot 2024-05-07 at 3.53.55 PM](images/Screenshot%202024-05-07%20at%203.53.55%20PM.png)
+![Screenshot 2024-05-07 at 3.50.19 PM](images/Screenshot%202024-05-07%20at%203.50.19%20PM.png)
 I then added the *Grep Match* rule by copying the password mismatch error and pasting it into it:
-![[Screenshot 2024-05-07 at 3.54.53 PM.png]]
+![Screenshot 2024-05-07 at 3.54.53 PM](images/Screenshot%202024-05-07%20at%203.54.53%20PM.png)
 This was the result when sorting my the string:
-![[Screenshot 2024-05-07 at 3.55.36 PM.png]]
+![Screenshot 2024-05-07 at 3.55.36 PM](images/Screenshot%202024-05-07%20at%203.55.36%20PM.png)
 I used the given password to log into *carlos*'s account to complete the lab.
 

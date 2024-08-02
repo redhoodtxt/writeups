@@ -2,7 +2,7 @@
 You can log in to your own account using the following credentials: wiener:peter*
 
 Logged in and tried buying a cheaper item, viewing the purchasing workflow using *Proxy*:
-![[Screenshot 2024-05-10 at 2.09.48 PM.png]]
+![Screenshot 2024-05-10 at 2.09.48 PM](images/Screenshot%202024-05-10%20at%202.09.48%20PM.png)
 
 I changed the `productId` parameter value to 1 (that of the jacket) and changed the `redir` parameter value to `CART` in *Repeater* and sent the request, which solved the lab:
-![[Screenshot 2024-05-10 at 2.11.45 PM.png]]
+![Screenshot 2024-05-10 at 2.11.45 PM](images/Screenshot%202024-05-10%20at%202.11.45%20PM.png)

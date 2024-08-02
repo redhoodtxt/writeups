@@ -1,7 +1,7 @@
 *This lab contains a path traversal vulnerability in the display of product images. To solve the lab, retrieve the contents of the /etc/passwd file.*
 
 Greeted with the following page: 
-![[file traversal simple.png]]
+![file traversal simple](images/file%20traversal%20simple.png)
 
 Enabled Burp Intercept and opened one of the images in a new tab in order for the it to fetch the image from a folder.
 

@@ -7,11 +7,11 @@ echo file_get_contents('/home/carlos/secret');
 
 Logged in with the given credentials, receiving this page when I clicked on *My account*. 
 
-![[Screenshot 2024-04-30 at 7.15.49 PM.png]]
+![Screenshot 2024-04-30 at 7.15.49 PM](images/Screenshot%202024-04-30%20at%207.15.49%20PM.png)
 
 I uploaded a file and observed the requests made through Burp Intercept. Uploading the file will direct me to this page: 
 
-![[Screenshot 2024-04-30 at 7.19.43 PM.png]]
+![Screenshot 2024-04-30 at 7.19.43 PM](images/Screenshot%202024-04-30%20at%207.19.43%20PM.png)
 
 Heading back to my account will trigger this intercept, where the server fetches my 'image' from the following directory: 
 ```Burp 

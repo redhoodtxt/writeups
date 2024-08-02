@@ -1,6 +1,6 @@
 Navigated to the login page and clicked on *View Source* :
 
-![[unprotected admin func with unpredictable url.png]]
+![unprotected admin func with unpredictable url](images/unprotected%20admin%20func%20with%20unpredictable%20url.png)
 
 As seen from above, the directory `admin-f31dzh` is appended to the URL if the role is *admin* .
 I navigated to the directory by : 

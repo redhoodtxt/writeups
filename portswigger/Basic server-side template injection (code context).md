@@ -2,9 +2,9 @@
 You can log in to your own account using the following credentials: wiener:peter*
 
 Logged in and chose my preferred name to see this request:
-![[Screenshot 2024-06-03 at 10.32.53 AM.png]]
+![Screenshot 2024-06-03 at 10.32.53 AM](images/Screenshot%202024-06-03%20at%2010.32.53%20AM.png)
 Saw that it controlled the name in the comment section of a blog. I posted a comment and injected the following payload into the change display name request to see if i can break out of the expression and inject code that can be evaluated:
-![[Screenshot 2024-06-03 at 11.08.59 AM.png]]
+![Screenshot 2024-06-03 at 11.08.59 AM](images/Screenshot%202024-06-03%20at%2011.08.59%20AM.png)
 I then injected the following code to delete the file `morale.txt`:
-![[Screenshot 2024-06-03 at 11.10.42 AM.png]]
+![Screenshot 2024-06-03 at 11.10.42 AM](images/Screenshot%202024-06-03%20at%2011.10.42%20AM.png)
 Syntax was found here: [HackTricks](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection#tornado-python)

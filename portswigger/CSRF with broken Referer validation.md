@@ -3,4 +3,4 @@ To solve the lab, use your exploit server to host an HTML page that uses a CSRF 
 You can log in to your own account using the following credentials: wiener:peter*
 
 Delivered the following exploit to solve the lab:
-![[Screenshot 2024-05-27 at 10.37.02 AM.png]]
+![Screenshot 2024-05-27 at 10.37.02 AM](images/Screenshot%202024-05-27%20at%2010.37.02%20AM.png)

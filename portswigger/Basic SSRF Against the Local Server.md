@@ -2,7 +2,7 @@
 
 Greeted by a page with different products. I decided to check out one of the products, where I found a stock check feature. 
 
-![[Screenshot 2024-04-30 at 5.49.03 PM.png]]
+![Screenshot 2024-04-30 at 5.49.03 PM](images/Screenshot%202024-04-30%20at%205.49.03%20PM.png)
 In order to intercept the stock check feature, I clicked on the *check stock* function while Burp Intercept was turned on. I received the following output : 
 ```Burp 
 POST /product/stock HTTP/2

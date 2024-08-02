@@ -4,19 +4,19 @@ Candidate passwords
 To solve the lab, enumerate a valid username, brute-force this user's password, then access their account page.*
 
 At the login page, I typed in wrong credentials. This gave a unclear error message as shown: 
-![[Screenshot 2024-05-03 at 2.06.41 PM.png]]
+![Screenshot 2024-05-03 at 2.06.41 PM](images/Screenshot%202024-05-03%20at%202.06.41%20PM.png)
 The failed login created a request I can observe in Burp's *HTTP History*:
-![[Screenshot 2024-05-03 at 2.07.49 PM.png]]
+![Screenshot 2024-05-03 at 2.07.49 PM](images/Screenshot%202024-05-03%20at%202.07.49%20PM.png)
 I sent the Request into *Intruder* to brute-force a valid username first. I set the type to *Sniper*, set the defined points at the values of `username=` and uploaded the username wordlist to the payload set, as shown below: 
 ```Intruder
 POST /login HTTP/2
 ...
 username=§wiener§&password=peter
 ```
-![[Screenshot 2024-05-03 at 2.12.01 PM.png]]
+![Screenshot 2024-05-03 at 2.12.01 PM](images/Screenshot%202024-05-03%20at%202.12.01%20PM.png)
 I went to settings and set the *Grep-Match* setting to add the string 'Invalid username or password.' This would return 1 if the string was found, or 0, which would mean that the username is correct. 
 I sorted the string from ascending order to obtain the following results: 
-![[Screenshot 2024-05-03 at 2.36.35 PM.png]]
+![Screenshot 2024-05-03 at 2.36.35 PM](images/Screenshot%202024-05-03%20at%202.36.35%20PM.png)
 
 The username *accounts* does not return the same string value as the rest of the usernames as the string is missing an period. This means that this username is correct. 
 We now need to find the correct password for this username. 
@@ -26,11 +26,11 @@ POST /login HTTP/2
 ...
 username=accounts&password=§peter§
 ```
-![[Screenshot 2024-05-03 at 2.40.14 PM.png]]
+![Screenshot 2024-05-03 at 2.40.14 PM](images/Screenshot%202024-05-03%20at%202.40.14%20PM.png)
 I replaced the string to 'Invalid username or password', without the `.` and ran the attack,  sorting the results from ascending: 
-![[Screenshot 2024-05-03 at 2.44.02 PM.png]]
+![Screenshot 2024-05-03 at 2.44.02 PM](images/Screenshot%202024-05-03%20at%202.44.02%20PM.png)
 The password *shadow* not only failed to return the string, but also had a different status code from the rest of the responses.
 
  I logged in with the credentials: 
- ![[Screenshot 2024-05-03 at 2.45.48 PM.png]]
+ ![Screenshot 2024-05-03 at 2.45.48 PM](images/Screenshot%202024-05-03%20at%202.45.48%20PM.png)
 Done!

@@ -9,7 +9,7 @@ Alt+X
 Please note that the intended solution to this lab is only possible in Chrome.*
 
 Noticed that there was a canonical link tag upon loading the page:
-![[Screenshot 2024-05-16 at 10.57.06 AM 1.png]]
+![Screenshot 2024-05-16 at 10.57.06 AM 1](images/Screenshot%202024-05-16%20at%2010.57.06%20AM%201.png)
 I input the following payload in the root URL:
 `?'accesskey='x'onclick='alert(1)`
 

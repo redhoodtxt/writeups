@@ -48,7 +48,7 @@ The payload I used was a list of numbers from 1 to 256. I then commenced the Sni
 
 Sorting the output by status code, I noticed that only 1 payload returned a 200 OK status code, as seen below: 
 
-![[Screenshot 2024-04-30 at 6.29.57 PM.png]]
+![Screenshot 2024-04-30 at 6.29.57 PM](images/Screenshot%202024-04-30%20at%206.29.57%20PM.png)
 
 This was for `192.168.0.145`. Sending this to the Repeater, I managed to obtain the following response: 
 

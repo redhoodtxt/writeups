@@ -143,10 +143,10 @@ Jake (Admin)
 Tried logging in via `SSH` but it didn't seem to work. I went to the official documentation of the `Bolt` CMS to check for clues, and it mentioned that we can log in to the CMS with the `<domain name>/bolt`, so that's what I did. 
 
 Successfully authenticating and accessing the dashboard, we see the version of the CMS used: 
-![[bolt version no.png]]
+![bolt version no](images/bolt%20version%20no.png)
 To find the exploit ID of the previous , we can search the `bolt 3.7.0` on *ExploitDB*.
 
-![[bolt edb id.png|500]]
+![500](images/bolt%20edb%20id.png)
 Ran a search on `metasploit` to check for the exploit: 
 ```
 msf6 > search bolt

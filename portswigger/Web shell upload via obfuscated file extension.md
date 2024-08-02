@@ -5,4 +5,4 @@ You can log in to your own account using the following credentials: wiener:peter
 Logged in with my credentials and uploaded a malicious script that obfuscated the file extension
 `exploit.php%00.jpg`
 Checked the `GET` request to retrieve the secret:
-![[Screenshot 2024-05-13 at 2.45.02 PM.png]]
+![Screenshot 2024-05-13 at 2.45.02 PM](images/Screenshot%202024-05-13%20at%202.45.02%20PM.png)

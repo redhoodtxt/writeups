@@ -20,7 +20,7 @@ Sec-Fetch-User: ?1
 Te: trailers
 ```
 Hence, with each forwarding of request, i changed the admin value to `true`.
-![[user role controlled by request params.png]]
+![user role controlled by request params](images/user%20role%20controlled%20by%20request%20params.png)
 I was then able to delete the user *carlos*. 
 
 Done!

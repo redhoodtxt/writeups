@@ -34,5 +34,5 @@ I received the following response:
 <p class=is-warning>ERROR: invalid input syntax for type integer: "tirdib4p6fzefsyevp93"</p>
 ```
 I then logged in using the credentials : 
-![[Screenshot 2024-05-02 at 5.33.43 PM.png]]
+![Screenshot 2024-05-02 at 5.33.43 PM](images/Screenshot%202024-05-02%20at%205.33.43%20PM.png)
 

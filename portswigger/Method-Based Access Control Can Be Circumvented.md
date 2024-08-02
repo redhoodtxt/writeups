@@ -2,7 +2,7 @@
 
 Logged in as admin first and navigated to the admin panel : 
 
-![[Screenshot 2024-04-30 at 4.06.47 PM.png]]
+![Screenshot 2024-04-30 at 4.06.47 PM](images/Screenshot%202024-04-30%20at%204.06.47%20PM.png)
 Let's try capturing the request to upgrade a user to see what is passed: 
 
 ```Burp 

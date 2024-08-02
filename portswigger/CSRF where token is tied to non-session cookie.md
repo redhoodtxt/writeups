@@ -5,14 +5,14 @@ You have two accounts on the application that you can use to help design your at
 `carlos:montoya`*
 
 Noticed that there was a `csrfKey` cookie along with a `csrf` token for both the login request:
-![[Screenshot 2024-05-23 at 11.16.28 AM.png]]
+![Screenshot 2024-05-23 at 11.16.28 AM](images/Screenshot%202024-05-23%20at%2011.16.28%20AM.png)
 and the change email request:
-![[Screenshot 2024-05-23 at 11.18.56 AM.png]]
+![Screenshot 2024-05-23 at 11.18.56 AM](images/Screenshot%202024-05-23%20at%2011.18.56%20AM.png)
 The cookie and token remained the same for each request. 
 I to figure out a way to inject the `csrfKey` into the victim browser before feeding my token to the victim. I found out that I could set cookies when searching through the blogs:
-![[Screenshot 2024-05-23 at 2.33.01 PM.png]]
+![Screenshot 2024-05-23 at 2.33.01 PM](images/Screenshot%202024-05-23%20at%202.33.01%20PM.png)
 I figured that I could break out of the header and inject my own cookie, I sent the request to *Repeater*, and modified the request to the following:
-![[Screenshot 2024-05-23 at 2.46.45 PM.png]]
+![Screenshot 2024-05-23 at 2.46.45 PM](images/Screenshot%202024-05-23%20at%202.46.45%20PM.png)
 Injected the following code into the exploit server:
 ```html 
 <html>
